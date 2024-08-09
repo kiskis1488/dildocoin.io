@@ -34,16 +34,9 @@ document.addEventListener("DOMContentLoaded", function(){
 		textCoin.innerHTML = coin;
 		localStorage.setItem("Coins", coin);
 	}
-
-	function upAddCoin(){
-		alert("Еще нету, скоро будут")
-	}
 	
 	but.addEventListener("click", addCoin);
-	boostBut.addEventListener("click", upAddCoin);
-	infoBut.addEventListener("click", function(){
-		alert("Скоро будут бусты");
-	})
+	
 	resetBut.addEventListener("click", function(){
 		coin = 0;
 		textCoin.innerHTML = coin;
