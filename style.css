@@ -3,6 +3,7 @@ body {
 	user-select: none;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	background: white;
 }
 
 .container {
