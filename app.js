@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	function setup(){
 		textCoin.innerHTML = coin;
 		textLvl.innerHTML = "LVL: " + lvl;
-		upCoin = 1000;
+		upCoin = 1;
 		skin();
 	}
 
