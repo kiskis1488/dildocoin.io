@@ -1,29 +1,41 @@
 body {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	user-select: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .container {
+	display: block;
 	width: 200px;
 	border-radius: 20px;
-	background-color: pink;
+	background-color: magenta;
 	position: absolute;
  	top: 50%;
   	left: 50%;
 	transform: translate(-50%, -50%);
+	cursor: pointer;
+	transition: .1s;
+}
+
+.container:active {
+	background-color: rgb(255, 0, 93);
+	transition: .0.3s;
 }
 
 .textDildo {
 	position: absolute;
-	top: 33%;
+	top: 31%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 200px;
+	text-align: center;
+	border-radius: 50px;
+	transition: .1s;
 }
 
-.author {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.textDildo:hover {
+	background-color: rgb(255, 57, 215);
 }
 
 #LVL {
@@ -31,6 +43,14 @@ body {
 	top: 27%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 200px;
+	text-align: center;
+	border-radius: 50px;
+	transition: .1s;
+}
+
+#LVL:hover {
+	background-color: rgb(255, 57, 215);
 }
 
 #but {
@@ -42,31 +62,43 @@ body {
 	cursor: pointer;
 }
 
-#but:hover {
-	width: 100px;
-	height: 100px;
-}
-
-.butPanel {
+.panelBut {
 	position: absolute;
-	top: 70%;
 	transform: translate(-50%, -50%);
 	padding: 0;
   	border: none;
-  	background-color: pink;
+  	background-color: #f131ff;
 	color: white;
 	border-radius: 10px;
 	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	transition: .1s;
+}
+
+.panelBut:active {
+	background-color: rgb(255, 0, 93);
 }
 
 #resetBut {
+	left: 46%;
+	top: 70%;
+}
+
+#boostBut {
 	left: 50%;
+	top: 70%;
+}
+
+#themeBut {
+	left: 54%;
+	top: 70%;
 }
 
 #textCoin {
-	position: absolute;
-	left: 50%;
+	margin-left: 50%;
 	transform: translate(-50%);
 	text-align: center;
-	color: magenta;
+	color: white;
+	transition: .1s;
 }
